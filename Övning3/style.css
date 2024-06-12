@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 5% 5% 0 5%;
+  width: 100%;
+}
+
+.top-circle div {
+  height: 4rem;
+  width: 4rem;
+  background-color: blueviolet;
+  border-radius: 100%;
+  margin-bottom: 5%;
+}
+
+.header-elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.header-elements div {
+  height: 4.5rem;
+  width: 100%;
+  background-color: purple;
+  border-radius: 100px;
+}
+
+main {
+  padding: 5% 10%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  flex: 1;
+  gap: 5px;
+}
+
+.pink-boxes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.pink-boxes div {
+  width: 100%;
+  background-color: pink;
+}
+
+.other-pink-boxes {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.other-pink-boxes div {
+  background-color: hotpink;
+}
+
+footer {
+  height: 4rem;
+  width: 100%;
+  margin-top: auto;
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 460px) {
+  .top-circle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-elements {
+    grid-template-columns: 1fr;
+  }
+
+  .header-elements div {
+    height: 3rem;
+  }
+
+  main {
+    padding: 5px 5% 5px 5%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+  }
+  .pink-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .other-pink-boxes {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
